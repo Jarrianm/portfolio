@@ -1,4 +1,5 @@
 <script setup>
+const base = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -64,7 +65,7 @@
         <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
           <div class="avatar-wrap">
             <img
-              src="/assets/profile/IMG_6414.jpeg"
+              :src="`${base}assets/profile/IMG_6414.jpeg`"
               alt="Jarrian McLean"
               class="avatar-img"
             >

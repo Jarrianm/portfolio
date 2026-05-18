@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const posts = [
   {
     id: 1,
@@ -7,7 +9,7 @@ export const posts = [
     readTime: '2 min read',
     claps: 101,
     url: 'https://medium.com/@jarrian.mclean/my-experience-at-bootcamp-part-1-ac04d202245d',
-    image: '/assets/blog/post-1.jpg',
+    image: `${base}assets/blog/post-1.jpg`,
   },
   {
     id: 2,
@@ -17,7 +19,7 @@ export const posts = [
     readTime: '4 min read',
     claps: 253,
     url: 'https://medium.com/@jarrian.mclean/the-sw-proxy-a-hidden-gem-393ae1d01f53',
-    image: '/assets/blog/post-2.jpg',
+    image: `${base}assets/blog/post-2.jpg`,
   },
   {
     id: 3,
@@ -27,7 +29,7 @@ export const posts = [
     readTime: '4 min read',
     claps: 61,
     url: 'https://medium.com/@jarrian.mclean/switching-from-ruby-to-javascript-3d0fe3513754',
-    image: '/assets/blog/post-3.jpg',
+    image: `${base}assets/blog/post-3.jpg`,
   },
   {
     id: 4,
@@ -37,7 +39,7 @@ export const posts = [
     readTime: '7 min read',
     claps: 180,
     url: 'https://medium.com/@jarrian.mclean/top-down-vs-bottom-up-design-c5e82d48f37',
-    image: '/assets/blog/post-4.jpg',
+    image: `${base}assets/blog/post-4.jpg`,
   },
   {
     id: 5,
@@ -47,6 +49,6 @@ export const posts = [
     readTime: '6 min read',
     claps: 405,
     url: 'https://medium.com/@jarrian.mclean/congrats-you-failed-your-first-code-challenge-1934589da7b9',
-    image: '/assets/blog/post-5.jpg',
+    image: `${base}assets/blog/post-5.jpg`,
   },
 ]

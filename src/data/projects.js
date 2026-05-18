@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const projects = [
   {
     id: 1,
@@ -6,7 +8,7 @@ export const projects = [
     tags: ['Ruby on Rails', 'JavaScript', 'PostgreSQL'],
     github: 'https://github.com/jarrianm/Broadcast',
     demo: null,
-    image: '/assets/projects/broadcast.png',
+    image: `${base}assets/projects/broadcast.png`,
     likes: 14,
   },
   {
@@ -16,7 +18,7 @@ export const projects = [
     tags: ['JavaScript', 'React', 'CSS'],
     github: 'https://github.com/jarrianm/MovieNight-frontend',
     demo: null,
-    image: '/assets/projects/movienight-frontend.png',
+    image: `${base}assets/projects/movienight-frontend.png`,
     likes: 9,
   },
   {
@@ -26,7 +28,7 @@ export const projects = [
     tags: ['Ruby on Rails', 'PostgreSQL', 'REST API'],
     github: 'https://github.com/jarrianm/MovieNight-backend',
     demo: null,
-    image: '/assets/projects/movienight-backend.png',
+    image: `${base}assets/projects/movienight-backend.png`,
     likes: 7,
   },
   {
@@ -36,7 +38,7 @@ export const projects = [
     tags: ['Ruby on Rails', 'JavaScript', 'PostgreSQL'],
     github: 'https://github.com/jarrianm/AnimalGuild',
     demo: null,
-    image: '/assets/projects/animalguild.png',
+    image: `${base}assets/projects/animalguild.png`,
     likes: 21,
   },
   {
@@ -46,7 +48,7 @@ export const projects = [
     tags: ['Vue 3', 'Vite', 'JavaScript'],
     github: 'https://github.com/jarrianm/os-frontend',
     demo: null,
-    image: '/assets/projects/os shopper.png',
+    image: `${base}assets/projects/os shopper.png`,
     likes: 6,
-  }
+  },
 ]
