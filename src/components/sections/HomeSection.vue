@@ -22,7 +22,7 @@ const base = import.meta.env.BASE_URL
 
           <div class="d-flex flex-wrap gap-3 mb-4 justify-content-center justify-content-lg-start">
             <a
-              href="/assets/resume.pdf"
+              :href="`${base}assets/resume.pdf`"
               target="_blank"
               class="btn-accent btn"
             >
