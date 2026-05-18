@@ -1,0 +1,105 @@
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --bg-primary: #242424;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #2e2e2e;
+  --bg-card-hover: #363636;
+  --accent: #4a76e8;
+  --accent-light: #6697ff;
+  --text-primary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --glow: rgba(102, 151, 255, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+// Gradient bleed between sections
+.section-transition {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.section-to-secondary::after {
+  background: linear-gradient(to bottom, transparent, var(--bg-secondary));
+}
+
+.section-to-primary::after {
+  background: linear-gradient(to bottom, transparent, var(--bg-primary));
+}
+
+section {
+  padding: 96px 0;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.accent {
+  color: var(--accent-light);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.15s;
+
+  &:hover {
+    background: var(--accent-light);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+}
+
+.btn-outline-accent {
+  border: 1px solid var(--accent-light);
+  color: var(--accent-light);
+  background: transparent;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.15s;
+
+  &:hover {
+    background: rgba(102, 151, 255, 0.12);
+    transform: translateY(-1px);
+  }
+}
