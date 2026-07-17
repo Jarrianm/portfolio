@@ -21,7 +21,7 @@ const year = new Date().getFullYear()
             />
           </a>
           <a
-            href="https://linkedin.com/in/jarrian-mclean"
+            href="https://linkedin.com/in/jarrianm"
             target="_blank"
             rel="noopener"
             aria-label="LinkedIn"

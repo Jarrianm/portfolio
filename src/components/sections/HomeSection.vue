@@ -51,7 +51,7 @@ const base = import.meta.env.BASE_URL
               <i class="bi bi-github" />
             </a>
             <a
-              href="https://linkedin.com/in/jarrian-mclean"
+              href="https://linkedin.com/in/jarrianm"
               target="_blank"
               rel="noopener"
               aria-label="LinkedIn"

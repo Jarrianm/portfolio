@@ -29,7 +29,7 @@ function handleSubmit() {
             Hire <span class="accent">Me</span>
           </h2>
           <p class="section-subtitle">
-            If you'd like to talk about an applicationor opportunity, I'd love to hear about your project.
+            If you'd like to talk about an application or opportunity, I'd love to hear about your project.
           </p>
         </div>
       </div>
@@ -132,7 +132,7 @@ function handleSubmit() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/jarrian-mclean"
+              href="https://linkedin.com/in/jarrianm"
               target="_blank"
               rel="noopener"
               class="social-pill"
